@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Nexa-Bold';
+  src: url("/fonts/Nexa-Bold.otf"); }
+
+@font-face {
+  font-family: 'Nexa-Light';
+  src: url("/fonts/Nexa-Light.otf"); }
+
+html,
+body {
+  font-family: 'Nexa-Light';
+  font-size: 16px;
+  color: #222222;
+  margin: 0; }
+
+h1 {
+  line-height: 1.5; }
+
+a {
+  text-decoration: none;
+  color: #222;
+  font-family: 'Nexa-Bold'; }
+
+.links {
+  list-style: none;
+  display: inline-block;
+  padding: 0px; }
+  .links li {
+    float: left;
+    margin-right: 20px; }
+  .links li.cs-link {
+    margin-top: 18px; }
+
+.btn-primary {
+  width: 120px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 4px;
+  border: 2px solid #fff; }
+
+.about {
+  position: absolute;
+  padding-left: 100px;
+  z-index: 99;
+  top: 30vh;
+  width: 642px; }
+  .about b {
+    font-family: 'Nexa-Bold'; }
+
+.left-box {
+  height: 100vh;
+  position: relative;
+  width: 35%;
+  background-image: url("/assets/left-bg-02.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .left-box .container {
+    padding-left: 100px;
+    padding-top: 50px; }
+  .left-box .social-links {
+    position: fixed;
+    bottom: 40px; }
+    .left-box .social-links ul {
+      list-style: none;
+      display: inline-block;
+      padding: 0px; }
+      .left-box .social-links ul li {
+        float: left;
+        margin-right: 30px;
+        opacity: 0.3; }
+      .left-box .social-links ul li:hover {
+        opacity: 1; }
+
+.right-box {
+  width: 65%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .right-box .container {
+    position: relative;
+    padding-right: 100px;
+    top: 25vh; }
+    .right-box .container ul.cs-recent {
+      list-style-type: none;
+      display: inline-block;
+      float: right;
+      text-align: right; }
+      .right-box .container ul.cs-recent h1 {
+        padding-right: 10px; }
+      .right-box .container ul.cs-recent .btn {
+        cursor: pointer; }
+      .right-box .container ul.cs-recent .cs-btn {
+        background-image: url("/assets/cs-btn-bg.png");
+        width: 277px;
+        height: 52px;
+        color: #fff; }
+
+.right-box.one-bg {
+  background-image: url("/assets/one-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.right-box.two-bg {
+  background-image: url("/assets/two-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.right-box.three-bg {
+  background-image: url("/assets/three-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.right-box.four-bg {
+  background-image: url("/assets/four-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }

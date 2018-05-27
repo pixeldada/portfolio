@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sourav Mondal - UX & Interface Designer</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+   <div class="about">
+       <h1>Hi, I'm Sourav.<br/> A <b>UX & Interface designer</b> at <br>Interaction One, Bangalore-India.</h1>
+       <ul class="links">
+           <li>
+               <a href="#">
+                   <div class="btn-primary">
+                       <span>Portfolio</span>
+                   </div>
+               </a>
+           </li>
+           <li class="cs-link">
+               <a href="#">Case Studies</a>
+           </li>
+       </ul>
+   </div>
+    <div class="left-box">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="pixel dada logo">
+            </div>
+            <div class="social-links">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="assets/twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/linkedin.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/behance.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/dribbble.png" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right-box">
+        <div class="container">
+            <ul class="cs-recent">
+                <a href="#">
+                    <li class="one btn">
+                        <h1>aer</h1>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="two btn">
+                        <h1>Genteel</h1>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="three btn">
+                        <h1>Jersey</h1>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="four btn">
+                        <h1>Misc</h1>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
+    
+    <script>
+        $('.btn').hover(function(){
+            $(this).addClass('cs-btn')
+            if($(this).hasClass('one')){
+                $('.right-box').addClass('one-bg animated fadeIn')
+            }
+            else if($(this).hasClass('two')){
+                $('.right-box').addClass('two-bg animated fadeIn')
+            }
+            else if($(this).hasClass('three')){
+                $('.right-box').addClass('three-bg animated fadeIn')
+            }
+            else if($(this).hasClass('four')){
+                $('.right-box').addClass('four-bg animated fadeIn')
+            }
+        }, function(){
+            $(this).removeClass('cs-btn')
+            if($(this).hasClass('one')){
+                $('.right-box').removeClass('one-bg animated fadeIn')
+            }
+            else if($(this).hasClass('two')){
+                $('.right-box').removeClass('two-bg animated fadeIn')
+            }
+            else if($(this).hasClass('three')){
+                $('.right-box').removeClass('three-bg animated fadeIn')
+            }
+            else if($(this).hasClass('four')){
+                $('.right-box').removeClass('four-bg animated fadeIn')
+            }
+        });
+    </script>
+    
+</body>
+</html>
