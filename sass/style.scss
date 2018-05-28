@@ -1,148 +1,112 @@
 @font-face {
     font-family: 'Nexa-Bold';
-    src: url('/fonts/Nexa-Bold.otf');
+    src: url('/fonts/Nexa-Bold.otf')
 }
 
 @font-face {
     font-family: 'Nexa-Light';
-    src: url('/fonts/Nexa-Light.otf');
+    src: url('/fonts/Nexa-Light.otf')
 }
 
 //Default
-html,
-body {
+
+html, body {
     font-family: 'Nexa-Light';
     font-size: 16px;
-    color: #222222;
-    margin: 0;
 }
 
-h1 {
-    line-height: 1.5;
-}
-
-a {
+a, span {
     text-decoration: none;
     color: #222;
-    font-family: 'Nexa-Bold';
 }
 
-.links {
-    list-style: none;
-    display: inline-block;
-    padding: 0px;
-    li {
-        float: left;
-        margin-right: 20px;
-    }
-    li.cs-link {
-        margin-top: 18px;
-    }
-}
-
+//Elements
 .btn-primary {
-    width: 120px;
-    height: 30px;
     color: #fff;
-    text-align: center;
-    padding-top: 15px;
-    border-radius: 4px;
-    border: 2px solid #fff;
+    font-family: 'Nexa-bold';
+    background-color: #222;
+    border-color: #222;
 }
 
-.about {
-    position: absolute;
-    padding-left: 100px;
-    z-index: 99;
-    top: 30vh;
-    width: 642px;
-    b {
-        font-family: 'Nexa-Bold';
-    }
-}
-
-.left-box {
-    height: 100vh;
-    position: relative;
-    width: 35%;
-    background-image: url('/assets/left-bg-02.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    .container {
+//Pages
+#index {
+    .left-box {
+        height: 100vh;
+        background-image: url('/assets/left-bg-02.png');
+        background-repeat: no-repeat;
+        background-size: cover;
         padding-left: 100px;
         padding-top: 50px;
-    }
-    .social-links {
-        position: fixed;
-        bottom: 40px;
-        ul {
-            list-style: none;
-            display: inline-block;
-            padding: 0px;
-            li {
-                float: left;
-                margin-right: 30px;
-                opacity: 0.3;
+        .about {
+            margin-top: 120px;
+            h3 {
+                font-size: 22px;
             }
-            li:hover {
-                opacity: 1;
-            }
-        }
-    }
-}
-
-.right-box {
-    width: 65%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    .container {
-        position: relative;
-        padding-right: 100px;
-        top: 25vh;
-        ul.cs-recent {
-            list-style-type: none;
-            display: inline-block;
-            float: right;
-            text-align: right;
-            h1 {
-                padding-right: 10px;
+            b {
+                font-family: 'Nexa-Bold';
             }
             .btn {
-                cursor: pointer;
+                margin-top: 30px;
             }
-            .cs-btn {
-                background-image: url('/assets/cs-btn-bg.png');
-                width: 277px;
-                height: 52px;
-                color: #fff;
+        }
+        .social-links {
+            ul {
+                list-style-type: none;
+                display: inline-block;
+                padding: 0;
+                position: fixed;
+                bottom: 40px;
+                li {
+                    float: left;
+                    padding-right: 20px;
+                    opacity: 0.3;
+                }
+                li:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
             }
         }
     }
-}
-
-.right-box.one-bg {
-    background-image: url('/assets/one-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.right-box.two-bg {
-    background-image: url('/assets/two-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.right-box.three-bg {
-    background-image: url('/assets/three-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.right-box.four-bg {
-    background-image: url('/assets/four-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    .right-box {
+        .cs-one {
+            height: 50vh;
+            background-image: url('/assets/one-bg.png');
+            background-size: cover;
+            padding: 0;
+        }
+        .cs-two {
+            height: 50vh;
+            background-image: url('/assets/two-bg.png');
+            background-size: cover;
+            padding: 0;
+        }
+        .cs-three {
+            height: 50vh;
+            background-image: url('/assets/three-bg.png');
+            background-size: cover;
+            padding: 0;
+        }
+        .desc {
+            font-family: 'Nexa-Light';
+            width: 100%;
+            height: 100%;
+            background-color: orangered;
+            position: relative;
+            opacity: 0;
+            color: #FFF;
+            -vendor-animation-duration: 0.2s;
+            -vendor-animation-delay: 0.2s;
+            .desc-cont {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 20px;
+            }
+        }
+        .desc:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    }
 }

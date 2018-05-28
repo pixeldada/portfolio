@@ -1,123 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Sourav Mondal - UX & Interface Designer</title>
-    
+    <title>Sourav Mondal - UX &amp; Interface Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
-<body>
-   <div class="about">
-       <h1>Hi, I'm Sourav.<br/> A <b>UX & Interface designer</b> at <br>Interaction One, Bangalore-India.</h1>
-       <ul class="links">
-           <li>
-               <a href="#">
-                   <div class="btn-primary">
-                       <span>Portfolio</span>
-                   </div>
-               </a>
-           </li>
-           <li class="cs-link">
-               <a href="#">Case Studies</a>
-           </li>
-       </ul>
-   </div>
-    <div class="left-box">
-        <div class="container">
-            <div class="logo">
-                <img src="assets/logo.png" alt="pixel dada logo">
-            </div>
-            <div class="social-links">
-                <ul>
-                    <li>
-                        <a href="#">
+
+<body id="index">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 left-box">
+                <img src="assets/logo.png" alt="logo">
+                <div class="about">
+                    <h3>Hi, I’m Sourav.<br> <b>UX &amp; Interface designer</b> <br> Interaction One, Bangalore - India.</h3>
+                    <div class="btn btn-primary">Portfolio</div>
+                </div>
+                <div class="social-links">
+                    <ul>
+                        <li>
                             <img src="assets/twitter.png" alt="twitter">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/linkedin.png" alt="twitter">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/behance.png" alt="twitter">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/dribbble.png" alt="twitter">
-                        </a>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <img src="assets/linkedin.png" alt="linkedin">
+                        </li>
+                        <li>
+                            <img src="assets/behance.png" alt="behance">
+                        </li>
+                        <li>
+                            <img src="assets/dribbble.png" alt="dribbble">
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="right-box">
-        <div class="container">
-            <ul class="cs-recent">
-                <a href="#">
-                    <li class="one btn">
-                        <h1>aer</h1>
-                    </li>
-                </a>
-                <a href="#">
-                    <li class="two btn">
-                        <h1>Genteel</h1>
-                    </li>
-                </a>
-                <a href="#">
-                    <li class="three btn">
-                        <h1>Jersey</h1>
-                    </li>
-                </a>
-                <a href="#">
-                    <li class="four btn">
-                        <h1>Misc</h1>
-                    </li>
-                </a>
-            </ul>
+            <div class="col-md-8 right-box">
+                <div class="row">
+                    <div class="col-md-6 cs-one">
+                        <div class="desc">
+                            <div class="desc-cont">
+                                <h6>Case Study</h6>
+                                <h3>Godrej aer</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 cs-two">
+                        <div class="desc">
+                            <div class="desc-cont">
+                                <h6>Case Study</h6>
+                                <h3>Godrej Genteel</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 cs-three">
+                        <div class="desc">
+                            <div class="desc-cont">
+                                <h6>Case Study</h6>
+                                <h3>Godrej Jersey</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous">
-    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     
     <script>
-        $('.btn').hover(function(){
-            $(this).addClass('cs-btn')
-            if($(this).hasClass('one')){
-                $('.right-box').addClass('one-bg animated fadeIn')
-            }
-            else if($(this).hasClass('two')){
-                $('.right-box').addClass('two-bg animated fadeIn')
-            }
-            else if($(this).hasClass('three')){
-                $('.right-box').addClass('three-bg animated fadeIn')
-            }
-            else if($(this).hasClass('four')){
-                $('.right-box').addClass('four-bg animated fadeIn')
-            }
+        $('.desc').hover(function(){
+            $(this).addClass('animated fadeIn')
         }, function(){
-            $(this).removeClass('cs-btn')
-            if($(this).hasClass('one')){
-                $('.right-box').removeClass('one-bg animated fadeIn')
-            }
-            else if($(this).hasClass('two')){
-                $('.right-box').removeClass('two-bg animated fadeIn')
-            }
-            else if($(this).hasClass('three')){
-                $('.right-box').removeClass('three-bg animated fadeIn')
-            }
-            else if($(this).hasClass('four')){
-                $('.right-box').removeClass('four-bg animated fadeIn')
-            }
+            $(this).removeClass('animated fadeIn')
         });
     </script>
-    
 </body>
+
 </html>
