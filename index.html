@@ -16,7 +16,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 left-box">
-                <img src="assets/logo.png" alt="logo">
+                <div class="logo"></div>
                 <div class="about">
                     <h3>Hi, I’m Sourav.<br> <b>UX &amp; Interface designer</b> <br> Interaction One, Bangalore - India.</h3>
                     <div class="btn btn-primary">Portfolio</div>
@@ -78,10 +78,16 @@
     
     <script>
         $('.desc').hover(function(){
-            $(this).addClass('animated fadeIn')
+            $(this).addClass('animated bounceIn')
         }, function(){
-            $(this).removeClass('animated fadeIn')
+            $(this).removeClass('animated bounceIn')
         });
+
+        $('.logo').hover(function(){
+            $(this).addClass('logo-flip');
+        }, function(){
+            $(this).removeClass('logo-flip');
+        })
     </script>
 </body>
 

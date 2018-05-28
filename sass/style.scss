@@ -22,10 +22,15 @@ a, span {
 
 //Elements
 .btn-primary {
-    color: #fff;
+    color: #FB7868;
     font-family: 'Nexa-bold';
-    background-color: #222;
-    border-color: #222;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-primary:hover {
+    background-color: #FB7868;
+    border-color: #FB7868;
+    color: #fff;
 }
 
 //Pages
@@ -37,8 +42,25 @@ a, span {
         background-size: cover;
         padding-left: 100px;
         padding-top: 50px;
+        position: relative;
+        .logo{
+            background-image: url('/assets/logo.png');
+            width: 78px;
+            height: 48px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+        .logo-flip{
+            background-image: url('/assets/logo-flip.png');
+            width: 78px;
+            height: 48px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+//            z-index: 9999;
+        }
         .about {
-            margin-top: 120px;
+            position: absolute;
+            top: 40%;
             h3 {
                 font-size: 22px;
             }
@@ -91,7 +113,8 @@ a, span {
             font-family: 'Nexa-Light';
             width: 100%;
             height: 100%;
-            background-color: orangered;
+            background-image: url('/assets/left-bg.png');
+            background-size: cover;
             position: relative;
             opacity: 0;
             color: #FFF;
@@ -105,7 +128,7 @@ a, span {
             }
         }
         .desc:hover {
-            opacity: 0.9;
+            opacity: 0.5;
             cursor: pointer;
         }
     }
